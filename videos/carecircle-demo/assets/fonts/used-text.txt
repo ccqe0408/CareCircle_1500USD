@@ -1,0 +1,174 @@
+<!doctype html><html><head><meta charset="utf-8"><title>CareCircle · 系统演示</title><style>@font-face{font-family:CareCN;src:url('assets/fonts/NotoSansSC.ttf') format('truetype');font-weight:100 900;font-display:block;}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#F7F8F2}#carecircle-demo{position:relative;width:100%;height:100%;font-family:CareCN,sans-serif;color:#153F35}.clip{position:absolute;inset:0}.brand{position:absolute;z-index:20;top:28px;left:110px;font-size:24px;font-weight:800;letter-spacing:1px}.foot{position:absolute;z-index:20;bottom:17px;left:110px;font-size:18px;color:#66766D;letter-spacing:1px}</style><script src="assets/vendor/gsap.min.js"></script></head><body><div id="carecircle-demo" data-composition-id="carecircle-demo" data-width="1920" data-height="1080" data-duration="142.4"><div id="host-scene-intro" class="clip" data-composition-id="scene-intro" data-composition-src="compositions/frames/scene-intro.html" data-start="0" data-duration="8" data-track-index="0" data-width="1920" data-height="1080"></div><div id="host-scene-review" class="clip" data-composition-id="scene-review" data-composition-src="compositions/frames/scene-review.html" data-start="8" data-duration="14" data-track-index="0" data-width="1920" data-height="1080"></div><div id="host-scene-request" class="clip" data-composition-id="scene-request" data-composition-src="compositions/frames/scene-request.html" data-start="22" data-duration="28" data-track-index="0" data-width="1920" data-height="1080"></div><div id="host-scene-handover" class="clip" data-composition-id="scene-handover" data-composition-src="compositions/frames/scene-handover.html" data-start="50" data-duration="48.4" data-track-index="0" data-width="1920" data-height="1080"></div><div id="host-scene-exceptions" class="clip" data-composition-id="scene-exceptions" data-composition-src="compositions/frames/scene-exceptions.html" data-start="98.4" data-duration="32" data-track-index="0" data-width="1920" data-height="1080"></div><div id="host-scene-closing" class="clip" data-composition-id="scene-closing" data-composition-src="compositions/frames/scene-closing.html" data-start="130.4" data-duration="12" data-track-index="0" data-width="1920" data-height="1080"></div><div class="brand">CareCircle</div><div class="foot">真实本地录屏 · 模拟人物及地址 · 非紧急社区协助</div></div><script>window.__timelines['carecircle-demo']=gsap.timeline({paused:true});</script></body></html><!doctype html><html><head><meta charset="utf-8"></head><body><template>
+<style>@font-face{font-family:CareCN;src:url('assets/fonts/NotoSansSC.ttf') format('truetype');font-weight:100 900;font-display:block;}
+*{box-sizing:border-box} .chapter-title{margin:0;display:flex;flex-wrap:wrap;gap:16px;font-weight:850;line-height:1.22;letter-spacing:-2px;color:#153F35}.chapter-title span{display:inline-block;transform:translateY(var(--hf-word-y,0px)) scale(var(--hf-word-scale,1));filter:blur(var(--hf-word-blur,0px));will-change:transform,opacity}
+.chapter-body{font-weight:400;line-height:1.65;color:#41594B;margin:24px 0 0}.chapter-count{font-size:24px;letter-spacing:3px;color:#66766D}.explanation{font-size:31px;font-weight:550;line-height:1.65;color:#153F35}.media{position:absolute;object-fit:contain}.phone-media{left:1390px;top:112px;width:405px;height:900px;border-radius:26px;border:2px solid #D9E3D7;background:#F7F8F2}.admin-media{left:150px;top:260px;width:1620px;height:770px;border-radius:12px;background:#101110}.clip{position:absolute} .caption-phone{left:100px;top:760px;width:1120px;height:200px}.caption-admin{left:110px;top:190px;width:1710px;height:54px;font-size:25px;line-height:1.5}
+ #scene-review{position:absolute;inset:0;width:100%;height:100%;font-family:CareCN,sans-serif;background:#F7F8F2}</style>
+<div id="scene-review" data-composition-id="scene-review" data-width="1920" data-height="1080" data-duration="14">
+<div style="position:absolute;left:110px;top:85px;width:1710px"><div class="chapter-count">02 / 06</div><h1 class="chapter-title hf-catalog-staggered-fade-up" style="font-size:48px"><span>社区审核</span><span>才可接单</span></h1><p class="chapter-body" style="font-size:26px">管理员核验志愿者，并记录审核依据。</p></div>
+<video id="scene-review-video" class="clip media admin-media" src="assets/raw/desktop-review.mp4" data-start="0" data-duration="7.5" data-media-start="0" data-playback-rate="0.35" data-track-index="1" muted playsinline></video><img id="scene-review-hold" class="clip media admin-media" src="assets/screens/admin-approved-desktop.png" data-start="7.5" data-duration="6.5" data-track-index="1" />
+</div><script>(()=>{const tl=gsap.timeline({paused:true});tl.fromTo('#scene-review .chapter-title span',{opacity:0,'--hf-word-y':'22px','--hf-word-scale':.92,'--hf-word-blur':'5px'},{opacity:1,'--hf-word-y':'0px','--hf-word-scale':1,'--hf-word-blur':'0px',duration:.3,stagger:.055,ease:'power3.out'},.05);window.__timelines['scene-review']=tl;})();</script>
+</template></body></html><!doctype html><html><head><meta charset="utf-8"></head><body><template>
+<style>@font-face{font-family:CareCN;src:url('assets/fonts/NotoSansSC.ttf') format('truetype');font-weight:100 900;font-display:block;}
+*{box-sizing:border-box} .chapter-title{margin:0;display:flex;flex-wrap:wrap;gap:16px;font-weight:850;line-height:1.22;letter-spacing:-2px;color:#153F35}.chapter-title span{display:inline-block;transform:translateY(var(--hf-word-y,0px)) scale(var(--hf-word-scale,1));filter:blur(var(--hf-word-blur,0px));will-change:transform,opacity}
+.chapter-body{font-weight:400;line-height:1.65;color:#41594B;margin:24px 0 0}.chapter-count{font-size:24px;letter-spacing:3px;color:#66766D}.explanation{font-size:31px;font-weight:550;line-height:1.65;color:#153F35}.media{position:absolute;object-fit:contain}.phone-media{left:1390px;top:112px;width:405px;height:900px;border-radius:26px;border:2px solid #D9E3D7;background:#F7F8F2}.admin-media{left:150px;top:260px;width:1620px;height:770px;border-radius:12px;background:#101110}.clip{position:absolute} .caption-phone{left:100px;top:760px;width:1120px;height:200px}.caption-admin{left:110px;top:190px;width:1710px;height:54px;font-size:25px;line-height:1.5}
+ #scene-exceptions{position:absolute;inset:0;width:100%;height:100%;font-family:CareCN,sans-serif;background:#F7F8F2}</style>
+<div id="scene-exceptions" data-composition-id="scene-exceptions" data-width="1920" data-height="1080" data-duration="32">
+<div style="position:absolute;left:110px;top:85px;width:1710px"><div class="chapter-count">05 / 06</div><h1 class="chapter-title hf-catalog-staggered-fade-up" style="font-size:48px"><span>异常有人处理</span><span>结果分别统计</span></h1></div>
+<video id="scene-exceptions-video" class="clip media admin-media" src="assets/raw/desktop-exception.mp4" data-start="0" data-duration="9.5" data-media-start="0" data-playback-rate="0.5" data-track-index="1" muted playsinline></video><img id="scene-exceptions-hold" class="clip media admin-media" src="assets/screens/admin-closed.jpg" data-start="9.5" data-duration="6.5" data-track-index="1" /><img id="scene-exceptions-stats" class="clip media admin-media" src="assets/screens/admin-stats-desktop.png" data-start="16" data-duration="16" data-track-index="1" /><div id="scene-exceptions-caption-0" class="clip explanation caption-admin" data-start="0" data-duration="10" data-track-index="5">所有候选人都不符合服务区域，系统将请求升级管理员。</div><div id="scene-exceptions-caption-1" class="clip explanation caption-admin" data-start="10" data-duration="6" data-track-index="5">管理员记录处理结果，关闭请求并保留审计。</div><div id="scene-exceptions-caption-2" class="clip explanation caption-admin" data-start="16" data-duration="16" data-track-index="5">后台将交接验证完成、人工关闭和取消分开统计。</div>
+</div><script>(()=>{const tl=gsap.timeline({paused:true});tl.fromTo('#scene-exceptions .chapter-title span',{opacity:0,'--hf-word-y':'22px','--hf-word-scale':.92,'--hf-word-blur':'5px'},{opacity:1,'--hf-word-y':'0px','--hf-word-scale':1,'--hf-word-blur':'0px',duration:.3,stagger:.055,ease:'power3.out'},.05);window.__timelines['scene-exceptions']=tl;})();</script>
+</template></body></html><!doctype html><html><head><meta charset="utf-8"></head><body><template>
+<style>@font-face{font-family:CareCN;src:url('assets/fonts/NotoSansSC.ttf') format('truetype');font-weight:100 900;font-display:block;}
+*{box-sizing:border-box} .chapter-title{margin:0;display:flex;flex-wrap:wrap;gap:16px;font-weight:850;line-height:1.22;letter-spacing:-2px;color:#153F35}.chapter-title span{display:inline-block;transform:translateY(var(--hf-word-y,0px)) scale(var(--hf-word-scale,1));filter:blur(var(--hf-word-blur,0px));will-change:transform,opacity}
+.chapter-body{font-weight:400;line-height:1.65;color:#41594B;margin:24px 0 0}.chapter-count{font-size:24px;letter-spacing:3px;color:#66766D}.explanation{font-size:31px;font-weight:550;line-height:1.65;color:#153F35}.media{position:absolute;object-fit:contain}.phone-media{left:1390px;top:112px;width:405px;height:900px;border-radius:26px;border:2px solid #D9E3D7;background:#F7F8F2}.admin-media{left:150px;top:260px;width:1620px;height:770px;border-radius:12px;background:#101110}.clip{position:absolute} .caption-phone{left:100px;top:760px;width:1120px;height:200px}.caption-admin{left:110px;top:190px;width:1710px;height:54px;font-size:25px;line-height:1.5}
+ #scene-request{position:absolute;inset:0;width:100%;height:100%;font-family:CareCN,sans-serif;background:#F7F8F2}</style>
+<div id="scene-request" data-composition-id="scene-request" data-width="1920" data-height="1080" data-duration="28">
+<div style="position:absolute;left:100px;top:170px;width:1120px"><div class="chapter-count">03 / 06</div><h1 class="chapter-title hf-catalog-staggered-fade-up" style="font-size:66px"><span>家属发起</span><span>邻里接手</span></h1><p class="chapter-body" style="font-size:34px">授权家属代办。系统按服务区域、类别、时间和容量筛选。</p></div>
+<video id="scene-request-video" class="clip media phone-media" src="assets/raw/native-flow.mp4" data-start="0" data-duration="28" data-media-start="0" data-playback-rate="1" data-track-index="1" muted playsinline></video><div id="scene-request-caption-0" class="clip explanation caption-phone" data-start="0" data-duration="10" data-track-index="5">家属填写受助人、领取地点、服务时段，并确认服务范围。</div><div id="scene-request-caption-1" class="clip explanation caption-phone" data-start="10" data-duration="10" data-track-index="5">志愿者收到适合自己的邀请，主动选择是否接受。</div><div id="scene-request-caption-2" class="clip explanation caption-phone" data-start="20" data-duration="8" data-track-index="5">接受后锁定指派。随后更新执行状态，双方查看同一进度。</div>
+</div><script>(()=>{const tl=gsap.timeline({paused:true});tl.fromTo('#scene-request .chapter-title span',{opacity:0,'--hf-word-y':'22px','--hf-word-scale':.92,'--hf-word-blur':'5px'},{opacity:1,'--hf-word-y':'0px','--hf-word-scale':1,'--hf-word-blur':'0px',duration:.3,stagger:.055,ease:'power3.out'},.05);window.__timelines['scene-request']=tl;})();</script>
+</template></body></html><!doctype html><html><head><meta charset="utf-8"></head><body><template>
+<style>@font-face{font-family:CareCN;src:url('assets/fonts/NotoSansSC.ttf') format('truetype');font-weight:100 900;font-display:block;}
+*{box-sizing:border-box} .chapter-title{margin:0;display:flex;flex-wrap:wrap;gap:16px;font-weight:850;line-height:1.22;letter-spacing:-2px;color:#153F35}.chapter-title span{display:inline-block;transform:translateY(var(--hf-word-y,0px)) scale(var(--hf-word-scale,1));filter:blur(var(--hf-word-blur,0px));will-change:transform,opacity}
+.chapter-body{font-weight:400;line-height:1.65;color:#41594B;margin:24px 0 0}.chapter-count{font-size:24px;letter-spacing:3px;color:#66766D}.explanation{font-size:31px;font-weight:550;line-height:1.65;color:#153F35}.media{position:absolute;object-fit:contain}.phone-media{left:1390px;top:112px;width:405px;height:900px;border-radius:26px;border:2px solid #D9E3D7;background:#F7F8F2}.admin-media{left:150px;top:260px;width:1620px;height:770px;border-radius:12px;background:#101110}.clip{position:absolute} .caption-phone{left:100px;top:760px;width:1120px;height:200px}.caption-admin{left:110px;top:190px;width:1710px;height:54px;font-size:25px;line-height:1.5}
+ #scene-closing{position:absolute;inset:0;width:100%;height:100%;font-family:CareCN,sans-serif;background:#F7F8F2}</style>
+<div id="scene-closing" data-composition-id="scene-closing" data-width="1920" data-height="1080" data-duration="12">
+<div style="position:absolute;left:100px;top:170px;width:1120px"><div class="chapter-count">06 / 06</div><h1 class="chapter-title hf-catalog-staggered-fade-up" style="font-size:66px"><span>流程已跑通</span><span>验证有记录</span></h1><p class="chapter-body" style="font-size:34px">Laravel API 与后台、Flutter App 共用持久化数据。</p></div>
+<img id="scene-closing-image" class="clip media phone-media" src="assets/screens/08-family-persisted-completion.png" data-start="0" data-duration="12" data-track-index="1" /><div id="scene-closing-caption-0" class="clip explanation caption-phone" data-start="0" data-duration="7" data-track-index="5">已验证权限、并发接单、邀请过期、错误码与跨角色完整流程。</div><div id="scene-closing-caption-1" class="clip explanation caption-phone" data-start="7" data-duration="5" data-track-index="5">本地与模拟器验证。演示人物及地址均为虚构，尚无真实社区试点。</div>
+</div><script>(()=>{const tl=gsap.timeline({paused:true});tl.fromTo('#scene-closing .chapter-title span',{opacity:0,'--hf-word-y':'22px','--hf-word-scale':.92,'--hf-word-blur':'5px'},{opacity:1,'--hf-word-y':'0px','--hf-word-scale':1,'--hf-word-blur':'0px',duration:.3,stagger:.055,ease:'power3.out'},.05);window.__timelines['scene-closing']=tl;})();</script>
+</template></body></html><!doctype html><html><head><meta charset="utf-8"></head><body><template>
+<style>@font-face{font-family:CareCN;src:url('assets/fonts/NotoSansSC.ttf') format('truetype');font-weight:100 900;font-display:block;}
+*{box-sizing:border-box} .chapter-title{margin:0;display:flex;flex-wrap:wrap;gap:16px;font-weight:850;line-height:1.22;letter-spacing:-2px;color:#153F35}.chapter-title span{display:inline-block;transform:translateY(var(--hf-word-y,0px)) scale(var(--hf-word-scale,1));filter:blur(var(--hf-word-blur,0px));will-change:transform,opacity}
+.chapter-body{font-weight:400;line-height:1.65;color:#41594B;margin:24px 0 0}.chapter-count{font-size:24px;letter-spacing:3px;color:#66766D}.explanation{font-size:31px;font-weight:550;line-height:1.65;color:#153F35}.media{position:absolute;object-fit:contain}.phone-media{left:1390px;top:112px;width:405px;height:900px;border-radius:26px;border:2px solid #D9E3D7;background:#F7F8F2}.admin-media{left:150px;top:260px;width:1620px;height:770px;border-radius:12px;background:#101110}.clip{position:absolute} .caption-phone{left:100px;top:760px;width:1120px;height:200px}.caption-admin{left:110px;top:190px;width:1710px;height:54px;font-size:25px;line-height:1.5}
+ #scene-intro{position:absolute;inset:0;width:100%;height:100%;font-family:CareCN,sans-serif;background:#F7F8F2}</style>
+<div id="scene-intro" data-composition-id="scene-intro" data-width="1920" data-height="1080" data-duration="8">
+<div style="position:absolute;left:100px;top:170px;width:1120px"><div class="chapter-count">01 / 06</div><h1 class="chapter-title hf-catalog-staggered-fade-up" style="font-size:80px"><span>CareCircle</span></h1><p class="chapter-body" style="font-size:34px">社区日常互助，从提出需求到确认交接。</p></div>
+<img id="scene-intro-image" class="clip media phone-media" src="assets/screens/01-family-home.png" data-start="0" data-duration="8" data-track-index="1" /><div id="scene-intro-caption-0" class="clip explanation caption-phone" data-start="0" data-duration="8" data-track-index="5">以下画面来自真实运行的 Flutter App 与 Laravel 管理后台。</div>
+</div><script>(()=>{const tl=gsap.timeline({paused:true});tl.fromTo('#scene-intro .chapter-title span',{opacity:0,'--hf-word-y':'22px','--hf-word-scale':.92,'--hf-word-blur':'5px'},{opacity:1,'--hf-word-y':'0px','--hf-word-scale':1,'--hf-word-blur':'0px',duration:.3,stagger:.055,ease:'power3.out'},.05);window.__timelines['scene-intro']=tl;})();</script>
+</template></body></html><!doctype html><html><head><meta charset="utf-8"></head><body><template>
+<style>@font-face{font-family:CareCN;src:url('assets/fonts/NotoSansSC.ttf') format('truetype');font-weight:100 900;font-display:block;}
+*{box-sizing:border-box} .chapter-title{margin:0;display:flex;flex-wrap:wrap;gap:16px;font-weight:850;line-height:1.22;letter-spacing:-2px;color:#153F35}.chapter-title span{display:inline-block;transform:translateY(var(--hf-word-y,0px)) scale(var(--hf-word-scale,1));filter:blur(var(--hf-word-blur,0px));will-change:transform,opacity}
+.chapter-body{font-weight:400;line-height:1.65;color:#41594B;margin:24px 0 0}.chapter-count{font-size:24px;letter-spacing:3px;color:#66766D}.explanation{font-size:31px;font-weight:550;line-height:1.65;color:#153F35}.media{position:absolute;object-fit:contain}.phone-media{left:1390px;top:112px;width:405px;height:900px;border-radius:26px;border:2px solid #D9E3D7;background:#F7F8F2}.admin-media{left:150px;top:260px;width:1620px;height:770px;border-radius:12px;background:#101110}.clip{position:absolute} .caption-phone{left:100px;top:760px;width:1120px;height:200px}.caption-admin{left:110px;top:190px;width:1710px;height:54px;font-size:25px;line-height:1.5}
+ #scene-handover{position:absolute;inset:0;width:100%;height:100%;font-family:CareCN,sans-serif;background:#F7F8F2}</style>
+<div id="scene-handover" data-composition-id="scene-handover" data-width="1920" data-height="1080" data-duration="48.4">
+<div style="position:absolute;left:100px;top:170px;width:1120px"><div class="chapter-count">04 / 06</div><h1 class="chapter-title hf-catalog-staggered-fade-up" style="font-size:66px"><span>收到物品</span><span>确认交接</span></h1><p class="chapter-body" style="font-size:34px">居民核对物品后生成确认码，由当前志愿者输入验证。</p></div>
+<video id="scene-handover-video" class="clip media phone-media" src="assets/raw/native-flow.mp4" data-start="0" data-duration="48.4" data-media-start="28" data-playback-rate="1" data-track-index="1" muted playsinline></video><div id="scene-handover-caption-0" class="clip explanation caption-phone" data-start="0" data-duration="12" data-track-index="5">家属切回居民界面，核对交接状态并生成一次性确认码。</div><div id="scene-handover-caption-1" class="clip explanation caption-phone" data-start="12" data-duration="12" data-track-index="5">志愿者回到同一任务，输入居民提供的确认码。</div><div id="scene-handover-caption-2" class="clip explanation caption-phone" data-start="24" data-duration="10" data-track-index="5">错误确认码被服务器拒绝，任务仍未完成。</div><div id="scene-handover-caption-3" class="clip explanation caption-phone" data-start="34" data-duration="10" data-track-index="5">输入正确确认码后，任务记录为交接验证完成。</div><div id="scene-handover-caption-4" class="clip explanation caption-phone" data-start="44" data-duration="4.4" data-track-index="5">重新登录家属账号，完成状态依然保留。</div>
+</div><script>(()=>{const tl=gsap.timeline({paused:true});tl.fromTo('#scene-handover .chapter-title span',{opacity:0,'--hf-word-y':'22px','--hf-word-scale':.92,'--hf-word-blur':'5px'},{opacity:1,'--hf-word-y':'0px','--hf-word-scale':1,'--hf-word-blur':'0px',duration:.3,stagger:.055,ease:'power3.out'},.05);window.__timelines['scene-handover']=tl;})();</script>
+</template></body></html><!--
+  Staggered Fade Up - typography primitive for HyperFrames.
+
+  Paste the markup, CSS and script into a composition. Drive the timeline
+  integration from a paused GSAP timeline so renders remain deterministic.
+
+  Variables. The script reads each one, falls back to the declared default on
+  anything missing or unrecognised, and writes the result as a custom property
+  the CSS below consumes. The timeline recipe at the bottom is untouched by
+  them: it keeps driving one offset, one scale and one blur, and these decide
+  what that offset means on screen and what colour the words arrive in.
+
+    - direction (up | down | left | right, default up): where the offset the
+      timeline drives points. up rises into place, down drops in, left and
+      right slide in along the baseline.
+    - distance (close | standard | far, default standard): scales that offset,
+      so the words cover a shorter or longer run in the same time. close covers
+      half the run, far nearly double.
+    - tone (ink | paper | accent, default ink): word colour. ink is near-black
+      for light frames, paper near-white for dark ones, accent rides --brand.
+      It writes its own property and never touches the shared --fg token.
+    - words (text, default "Staggered fade up"): the words themselves, split on
+      spaces, one span and one stagger step each. Anything empty, blank or not
+      a string leaves the authored markup alone.
+
+  On every default the result is identical to the original: three near-black
+  words rise 22px through a 5px blur, 0.055s apart.
+-->
+
+<div
+  class="hf-catalog-staggered-fade-up"
+  data-composition-variables='[
+    { "id": "direction", "type": "enum", "role": "motion", "label": "Direction", "description": "Where the offset the timeline drives points.", "default": "up", "options": [{ "value": "up", "label": "Up" }, { "value": "down", "label": "Down" }, { "value": "left", "label": "Left" }, { "value": "right", "label": "Right" }] },
+    { "id": "distance", "type": "enum", "role": "motion", "label": "Distance", "description": "Scales the travel offset, so the words cover a shorter or longer run in the same time.", "default": "standard", "options": [{ "value": "close", "label": "Close" }, { "value": "standard", "label": "Standard" }, { "value": "far", "label": "Far" }] },
+    { "id": "tone", "type": "enum", "role": "style", "label": "Tone", "description": "Word colour: ink for light frames, paper for dark ones, accent rides --brand.", "default": "ink", "options": [{ "value": "ink", "label": "Ink" }, { "value": "paper", "label": "Paper" }, { "value": "accent", "label": "Accent" }] },
+    { "id": "words", "type": "string", "role": "content", "label": "Words", "description": "The words themselves, split on spaces, one span and one stagger step each.", "default": "Staggered fade up" }
+  ]'
+>
+  <span>Staggered</span><span>fade</span><span>up</span>
+</div>
+
+<style>
+  .hf-catalog-staggered-fade-up {
+    color: var(--hf-fade-word-color, var(--fg, #18181b));
+    font-family: var(--font-display, Inter, system-ui, sans-serif);
+    font-weight: 900;
+    letter-spacing: -0.04em;
+  }
+  .hf-catalog-staggered-fade-up {
+    display: inline-flex;
+    gap: var(--space-1, 12px);
+    font-size: 56px;
+    line-height: 1;
+  }
+  .hf-catalog-staggered-fade-up span {
+    display: inline-block;
+    transform: translate(
+        calc(var(--hf-word-x, 0px) + var(--hf-word-y, 0px) * var(--hf-word-axis-x, 0)),
+        calc(var(--hf-word-y, 0px) * var(--hf-word-axis-y, 1))
+      )
+      scale(var(--hf-word-scale, 1));
+    filter: blur(var(--hf-word-blur, 0px));
+    will-change: transform, filter, opacity;
+  }
+</style>
+
+<script>
+  (function () {
+    "use strict";
+
+    var vars =
+      window.__hyperframes && window.__hyperframes.getVariables
+        ? window.__hyperframes.getVariables()
+        : {};
+
+    // Unrecognised overrides return to their declared defaults.
+    var axes = {
+      up: { x: 0, y: 1 },
+      down: { x: 0, y: -1 },
+      left: { x: -1, y: 0 },
+      right: { x: 1, y: 0 },
+    };
+    var reaches = { close: 0.5, standard: 1, far: 1.85 };
+    var tones = {
+      ink: "var(--fg, #18181b)",
+      paper: "#fafafa",
+      accent: "var(--brand, #34d399)",
+    };
+
+    function pick(table, value, fallback) {
+      return Object.prototype.hasOwnProperty.call(table, value) ? value : fallback;
+    }
+
+    var axis = axes[pick(axes, vars.direction, "up")];
+    var reach = reaches[pick(reaches, vars.distance, "standard")];
+    var tone = tones[pick(tones, vars.tone, "ink")];
+    var words =
+      typeof vars.words === "string" && vars.words.trim() ? vars.words.trim().split(/\s+/) : null;
+
+    var roots = document.querySelectorAll(".hf-catalog-staggered-fade-up");
+    for (var i = 0; i < roots.length; i += 1) {
+      roots[i].style.setProperty("--hf-word-axis-x", String(axis.x * reach));
+      roots[i].style.setProperty("--hf-word-axis-y", String(axis.y * reach));
+      roots[i].style.setProperty("--hf-fade-word-color", tone);
+      if (words) {
+        roots[i].textContent = "";
+        for (var j = 0; j < words.length; j += 1) {
+          var span = document.createElement("span");
+          span.textContent = words[j];
+          roots[i].appendChild(span);
+        }
+      }
+    }
+  })();
+</script>
+
+<!--
+  Timeline integration:
+  tl.fromTo('.hf-catalog-staggered-fade-up span', { opacity: 0, '--hf-word-y': '22px', '--hf-word-scale': 0.92, '--hf-word-blur': '5px' }, { opacity: 1, '--hf-word-y': '0px', '--hf-word-scale': 1, '--hf-word-blur': '0px', duration: 0.3, stagger: 0.055, ease: 'power3.out' }, startTime);
+-->

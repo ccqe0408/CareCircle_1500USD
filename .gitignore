@@ -1,0 +1,18 @@
+.DS_Store
+outputs/*
+!outputs/.gitkeep
+*.log
+backend/.env
+backend/.env.testing
+mobile/.dart_tool/
+mobile/build/
+videos/**/.hyperframes/
+videos/**/renders/
+videos/**/node_modules/
+videos/**/assets/raw/
+
+__pycache__/
+*.pyc
+
+# Video tool thumbnail cache (file names too long for Windows)
+videos/**/.thumbnails/

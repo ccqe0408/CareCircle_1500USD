@@ -1,0 +1,37 @@
+{
+  "exit_code": 0,
+  "markers": [
+    {
+      "name": "01-family-home",
+      "source_seconds": 0.002
+    },
+    {
+      "name": "02-request-published",
+      "source_seconds": 7.483
+    },
+    {
+      "name": "03-volunteer-accepted",
+      "source_seconds": 19.149
+    },
+    {
+      "name": "04-task-in-progress",
+      "source_seconds": 23.765
+    },
+    {
+      "name": "05-recipient-handover-code",
+      "source_seconds": 36.789
+    },
+    {
+      "name": "06-wrong-code-rejected",
+      "source_seconds": 52.499
+    },
+    {
+      "name": "07-handover-completed",
+      "source_seconds": 62.731
+    },
+    {
+      "name": "08-family-persisted-completion",
+      "source_seconds": 72.933
+    }
+  ]
+}

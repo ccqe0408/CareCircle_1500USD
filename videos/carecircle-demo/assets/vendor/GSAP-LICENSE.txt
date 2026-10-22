@@ -1,0 +1,2 @@
+GSAP: Standard 'no charge' license. https://gsap.com/standard-license/
+Exact installed dependency recorded in backend/package-lock.json.

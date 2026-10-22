@@ -1,0 +1,166 @@
+{
+  "duration": 142.4,
+  "source": "Actual Android and local admin capture",
+  "native_speed": 1,
+  "admin_review_rate": 0.35,
+  "admin_exception_rate": 0.5,
+  "scenes": [
+    {
+      "id": "intro",
+      "duration": 8,
+      "title": [
+        "CareCircle"
+      ],
+      "body": "社区日常互助，从提出需求到确认交接。",
+      "kind": "phone",
+      "image": "01-family-home.png",
+      "captions": [
+        [
+          0,
+          8,
+          "以下画面来自真实运行的 Flutter App 与 Laravel 管理后台。"
+        ]
+      ]
+    },
+    {
+      "id": "review",
+      "duration": 14,
+      "title": [
+        "社区审核",
+        "才可接单"
+      ],
+      "body": "管理员核验志愿者，并记录审核依据。",
+      "kind": "admin",
+      "video": "desktop-review.mp4",
+      "media_duration": 7.5,
+      "rate": 0.35,
+      "hold": "admin-approved-desktop.png",
+      "captions": []
+    },
+    {
+      "id": "request",
+      "duration": 28,
+      "title": [
+        "家属发起",
+        "邻里接手"
+      ],
+      "body": "授权家属代办。系统按服务区域、类别、时间和容量筛选。",
+      "kind": "phone",
+      "video": "native-flow.mp4",
+      "media_start": 0,
+      "media_duration": 28,
+      "captions": [
+        [
+          0,
+          10,
+          "家属填写受助人、领取地点、服务时段，并确认服务范围。"
+        ],
+        [
+          10,
+          10,
+          "志愿者收到适合自己的邀请，主动选择是否接受。"
+        ],
+        [
+          20,
+          8,
+          "接受后锁定指派。随后更新执行状态，双方查看同一进度。"
+        ]
+      ]
+    },
+    {
+      "id": "handover",
+      "duration": 48.4,
+      "title": [
+        "收到物品",
+        "确认交接"
+      ],
+      "body": "居民核对物品后生成确认码，由当前志愿者输入验证。",
+      "kind": "phone",
+      "video": "native-flow.mp4",
+      "media_start": 28,
+      "media_duration": 48.4,
+      "captions": [
+        [
+          0,
+          12,
+          "家属切回居民界面，核对交接状态并生成一次性确认码。"
+        ],
+        [
+          12,
+          12,
+          "志愿者回到同一任务，输入居民提供的确认码。"
+        ],
+        [
+          24,
+          10,
+          "错误确认码被服务器拒绝，任务仍未完成。"
+        ],
+        [
+          34,
+          10,
+          "输入正确确认码后，任务记录为交接验证完成。"
+        ],
+        [
+          44,
+          4.4,
+          "重新登录家属账号，完成状态依然保留。"
+        ]
+      ]
+    },
+    {
+      "id": "exceptions",
+      "duration": 32,
+      "title": [
+        "异常有人处理",
+        "结果分别统计"
+      ],
+      "body": "无人匹配时升级管理员；人工关闭保留原因与操作记录。",
+      "kind": "admin",
+      "video": "desktop-exception.mp4",
+      "media_duration": 9.5,
+      "rate": 0.5,
+      "hold": "admin-closed.jpg",
+      "second_image": "admin-stats-desktop.png",
+      "captions": [
+        [
+          0,
+          10,
+          "所有候选人都不符合服务区域，系统将请求升级管理员。"
+        ],
+        [
+          10,
+          6,
+          "管理员记录处理结果，关闭请求并保留审计。"
+        ],
+        [
+          16,
+          16,
+          "后台将交接验证完成、人工关闭和取消分开统计。"
+        ]
+      ]
+    },
+    {
+      "id": "closing",
+      "duration": 12,
+      "title": [
+        "流程已跑通",
+        "验证有记录"
+      ],
+      "body": "Laravel API 与后台、Flutter App 共用持久化数据。",
+      "kind": "phone",
+      "image": "08-family-persisted-completion.png",
+      "captions": [
+        [
+          0,
+          7,
+          "已验证权限、并发接单、邀请过期、错误码与跨角色完整流程。"
+        ],
+        [
+          7,
+          5,
+          "本地与模拟器验证。演示人物及地址均为虚构，尚无真实社区试点。"
+        ]
+      ]
+    }
+  ]
+}
